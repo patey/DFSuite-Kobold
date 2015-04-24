@@ -1,0 +1,18 @@
+name: KoboldScent
+main: com.ntcreations.KoboldScent.KoboldScent
+version: 0.0.1
+    
+commands:
+   KS:
+    description: Version check and plugin reload
+    usage: "usage: /<command>"
+    permission: KoboldScent.KS
+    permission-message: You don't have <permission>
+      
+permissions:
+    DwarfFortress.*:
+        description: Gives access to all commands
+        children:
+            KoboldScent.KS: true
+    KoboldScent.KS:
+        description: Version check/reload plugin
